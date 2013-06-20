@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/**********************************************
+* looklala.com v3.0
+* (c)2013 Radical Graphics Studios 
+* www.radicalgraphics.com
+*
+* crafted with ♥ in Amsterdam by @bochelord
+************************************************/
+
+body {
+        padding-top: 0;
+        padding-bottom: 30px;
+        
+      }
+.navbar {
+        margin-top: 20px;
+        font-family: 'terminal-light';
+      }
+
+.brand {
+       font-family: 'sueellen';
+}
+
+/* FontFace definitions
+-----------------------------------------------------------*/
+
+@font-face {
+    font-family: 'sueellen';
+    src: url('../fonts/SueEllenFrancisco.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'terminal-light';
+    src: url('../fonts/TerminalDosis-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

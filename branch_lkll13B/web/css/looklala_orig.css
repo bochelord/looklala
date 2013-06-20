@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+/**********************************************
+* looklala.com v3.0
+* (c)2013 Radical Graphics Studios 
+* www.radicalgraphics.com
+*
+* crafted with ♥ in Amsterdam by @bochelord
+************************************************/
+
+
+/* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        font-family: 'corpuscare';
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push{
+        height: 100px; /*We set the push before the footer*/
+      }
+
+      #push2{
+        height: 170px;
+      }
+
+      #footer {
+        height: 627px;
+      }
+      #footer {
+		background-image:url(../images/wave_tile_2.png);
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+		  
+        }
+      }
+
+
+/*Header adjustments -----------------------------------------*/
+
+
+.headerlala{
+  background-image: url(../images/header/backheader.png);
+  background-repeat: repeat-x;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+/* FontFace definitions
+-----------------------------------------------------------*/
+
+@font-face {
+    font-family: 'corpuscare';
+    src: url('corpuscare.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'abel';
+    src: url('abel-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Font adjustments
+-----------------------------------------------------------*/
+#footertext{
+  font-size: 28pt;
+  color: #bababb;
+  line-height: 400%;
+}
+
+#footertextabout{
+  font-size: 24pt;
+  color: #00637e;
+  text-shadow: #b2b9c4 0px 2px 0px; /*#323437*/
+  /*color:#0f0f0f;*/
+}
+
+#footertextcopy a, #footertextcopy{
+  font-family: "abel","Lucida Grande", Arial;
+  font-size: 14px;
+  color: #2d2f31;
+  text-align: center;
+  /*text-shadow: #b2b9c4 0px 2px 0px; /*#323437*/
+  /*color:#0f0f0f;*/
+}
+
+#footertextaddress {
+font-size: 14px;
+font-family: "abel";
+}
