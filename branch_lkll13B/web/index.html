@@ -21,6 +21,14 @@
 
 <link href="css/looklala.css" rel="stylesheet" type="text/css">
 
+<link href="engine/vegas/jquery.vegas.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -70,16 +78,16 @@
           <div class="span3">
             <!--Sidebar content-->
             <div class="hero-unit">
-              <p>SIDEBAR CONTENT</p>
+              <p>looklala SIDEBAR CONTENT</p>
             </div>
           </div>
           <div class="span9">
       <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-              <h2>Hero-unit Unthemed...</h2>
-              <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+              <h2>looklala Main "hero-unit"</h2>
+              <p>Here a set of the main grid for tshirts should appear. </p>
               <p>
-                <a class="btn btn-large btn-primary" href="../components.html#navbar">View navbar docs &raquo;</a>
+                <a class="btn btn-large btn-primary" href="../components.html#navbar">Check this! &raquo;</a>
               </p>
             </div>
           </div>
@@ -91,9 +99,63 @@
 
 
 <!-- BOCH: SCRIPTS -->
+
+
+
+
 <script type="text/javascript"  src="engine/jquery.js"></script>
+
+<script type="text/javascript" src="engine/vegas/jquery.vegas.js"></script>
 <script type="text/javascript"  src="engine/bootstrap-dropdown.js"></script>
 <script type="text/javascript"  src="engine/bootstrap-collapse.js"></script>
+
+
+
+<!--VEGAS RANDOM BACKGROUND-->
+<!--Vegas script customized for looklala-->
+
+<script type="text/javascript">
+  
+  var numeraco = Math.floor((Math.random()*6)+1);
+  var fondo = "";
+
+  if (numeraco == 1){
+    fondo ="images/backgrounds/back-1.jpg";
+  }
+  else if (numeraco == 2){
+    fondo = "images/backgrounds/back-2.jpg";
+  }
+  else if (numeraco == 3){
+    fondo = "images/backgrounds/back-3.jpg";
+  }
+  else if (numeraco == 4){
+    fondo = "images/backgrounds/back-4.jpg";
+  }
+  else if (numeraco == 5){
+    fondo = "images/backgrounds/back-5.jpg";
+  }
+  else {
+    fondo = "images/backgrounds/back-16.jpg";
+  }
+
+  //console.log("FONDO VALE: " + fondo);
+
+  $( function() {
+  $.vegas({
+    src:fondo,
+    fade:2000
+  });
+
+  //console.log("FONDO VALE DENTRO: " + fondo);
+
+  $.vegas('overlay', {
+    src:'engine/vegas/overlays/01.png'
+  });
+});
+
+</script>
+
+
 
 </body>
 </html>
