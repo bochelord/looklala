@@ -138,30 +138,75 @@
       </div>
     </div>
 
+<!--VEGAS SLIDESHOW-->
 
 <script type="text/javascript">
-
-$(function() {
+// $(function() {
      
 
 
-$.vegas( 'slideshow', {
-    delay: 10000,
-    backgrounds: [
-            { src: 'images/home/background_girl_mini.jpg', fade: 4000 },
-      { src: 'images/backgrounds/background_sunflowers.jpg', fade: 4000  },
-      { src: 'images/backgrounds/background_girl.jpg', fade: 4000  },
-      { src: 'images/backgrounds/background_sandia.jpg', fade: 4000  },
-/*      { src: 'images/backgrounds/background_girl2.jpg', fade: 4000  },
-      { src: 'images/backgrounds/background_girl3.jpg', fade: 4000  }, */
-	  { src: 'images/backgrounds/background_girl4.jpg', fade: 4000 }
+// $.vegas( 'slideshow', {
+//     delay: 10000,
+//     backgrounds: [
+//            /* { src: 'images/home/background_girl_mini.jpg', fade: 4000 },*/
+//       { src: 'images/backgrounds/background_sunflowers.jpg', fade: 4000  },
+//       { src: 'images/backgrounds/background_girl.jpg', fade: 4000  },
+//       { src: 'images/backgrounds/background_sandia.jpg', fade: 4000  },
+// /*      { src: 'images/backgrounds/background_girl2.jpg', fade: 4000  },
+//       { src: 'images/backgrounds/background_girl3.jpg', fade: 4000  }, */
+// 	  { src: 'images/backgrounds/background_girl4.jpg', fade: 4000 }
 
-    ]
-  } )( 'overlay' );
+//     ]
+//   } )( 'overlay' );
 
 
-} );
+// } );
+ </script>
+
+
+<!--VEGAS RANDOM BACKGROUND-->
+
+<script type="text/javascript">
+  
+  var numeraco = Math.floor((Math.random()*6)+1);
+  var fondo = "";
+
+  if (numeraco == 1){
+    fondo ="images/backgrounds/background_sunflowers.jpg";
+  }
+  else if (numeraco == 2){
+    fondo = "images/backgrounds/background_girl.jpg";
+  }
+  else if (numeraco == 3){
+    fondo = "images/backgrounds/background_sandia.jpg";
+  }
+  else if (numeraco == 4){
+    fondo = "images/backgrounds/background_girl2.jpg";
+  }
+  else if (numeraco == 5){
+    fondo = "images/backgrounds/background_girl3.jpg";
+  }
+  else {
+    fondo = "images/backgrounds/background_girl4.jpg";
+  }
+
+  //console.log("FONDO VALE: " + fondo);
+
+  $( function() {
+  $.vegas({
+    src:fondo,
+    fade:2000
+  });
+
+  //console.log("FONDO VALE DENTRO: " + fondo);
+
+  $.vegas('overlay', {
+    src:'engine/vegas/overlays/01.png'
+  });
+});
+
 </script>
+
 
 <!--UserVoice forum script -->
 
